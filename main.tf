@@ -61,6 +61,15 @@ data "aws_iam_policy_document" "main" {
     ]
 
     resources = ["*"]
+
+    condition {
+      test     = "StringLike"
+      variable = "ec2:ResourceTag/Name"
+
+      values = [
+        "Packer Builder",
+      ]
+    }
   }
 
   # Allow deleting key pairs.
