@@ -30,7 +30,7 @@
 
 locals {
   pkg  = "truss-aws-tools"
-  name = "ami-cleaner"
+  name = "packer-janitor"
 }
 
 data "aws_region" "current" {}
