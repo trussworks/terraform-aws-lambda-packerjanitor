@@ -5,8 +5,8 @@ variable "cloudwatch_logs_retention_days" {
 }
 
 variable "interval_minutes" {
-  default     = 240
-  description = "How often to run the packer janitor, in minutes. Default is 240 (4 hours)."
+  default     = 60
+  description = "How often to run the packer janitor, in minutes. Default is 60 (1 hour)."
   type        = "string"
 }
 

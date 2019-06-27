@@ -32,7 +32,7 @@ well as how to deploy it, see <https://github.com/trussworks/truss-aws-tools>.
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | cloudwatch\_logs\_retention\_days | Number of days to retain Cloudwatch logs. Default is 90 days. | string | `"90"` | no |
-| interval\_minutes | How often to run the packer janitor, in minutes. Default is 240 (4 hours). | string | `"240"` | no |
+| interval\_minutes | How often to run the packer janitor, in minutes. Default is 60 (1 hour). | string | `"60"` | no |
 | job\_identifier | A generic job identifier to make resources for this job more obvious. | string | n/a | yes |
 | packer\_resource\_delete | Perform the actual delete of abandoned Packer resources | string | n/a | yes |
 | packer\_timelimit | Number of hours after which a Packer instance will be considered abandoned. Default is 4 hours. | string | `"4"` | no |
