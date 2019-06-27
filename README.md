@@ -14,10 +14,10 @@ Creates the following resources:
 ## Usage
 
 ```hcl
-module "packer-janitor-lambda" {
+module "packerjanitor-lambda" {
   source                 = "trussworks/lambda-packerjanitor/aws"
-  packer_resource_delete = "true"
-  packer_timelimit       = "4"
+  packer_resource_delete = true
+  packer_timelimit       = "2"
   job_identifier         = "sample_app"
   s3_bucket              = "sample_app_lambdas"
   version_to_deploy      = "2.8"
