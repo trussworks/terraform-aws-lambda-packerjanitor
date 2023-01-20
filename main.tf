@@ -106,7 +106,7 @@ resource "aws_iam_policy" "main" {
 # Lambda function
 module "packerjanitor_lambda" {
   source  = "trussworks/lambda/aws"
-  version = "~>1.0.1"
+  version = "~> 2.6.0"
 
   name                           = local.name
   job_identifier                 = var.job_identifier
