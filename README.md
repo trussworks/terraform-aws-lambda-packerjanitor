@@ -1,4 +1,8 @@
-Creates a Lambda function with associated role and policies that
+# DEPRECIATION NOTICE
+
+This module has been deprecated and is no longer maintained. Should you need to continue to use it, please fork the repository. Thank you.
+
+ Creates a Lambda function with associated role and policies that
 will run the packer-janitor tool to get rid of orphaned Packer
 instances and their associated resources.
 
